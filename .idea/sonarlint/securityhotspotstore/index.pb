@@ -13,3 +13,29 @@ d
 4src/main/java/controller/OrderDetailsController.java,b\9\b9d715702b1825dc61553932391b1496805e3731
 Q
 !src/main/java/AppInitializer.java,d\8\d8724d5ff68b00b1e87def6fac487d03194f989f
+R
+"src/main/java/db/DBConnection.java,f\d\fd7336f68247f5ace91042607378ff616e4285dd
+R
+"src/main/java/entity/Customer.java,f\1\f14bad5e68bdfef4c489ba84a4d9c620bc6cb0f1
+N
+src/main/java/entity/Item.java,e\b\ebc4e4f150c5bb35020e5b9eb0c7b226c08ed0b0
+P
+ src/main/java/entity/Orders.java,4\8\48211ba3dd7e8b79fb874d28da2202f2c0a2a141
+V
+&src/main/java/entity/OrderDetails.java,f\4\f47589a5f6844451df09572a3f27967cc901e090
+R
+"src/main/java/dto/CustomerDto.java,6\d\6d52140f8b36d29a5a6973b0fa1a1f02a9fabaeb
+N
+src/main/java/dto/ItemDto.java,3\d\3d0380508e9c218720144ded2d55164c08dc8381
+O
+src/main/java/dto/OrderDto.java,d\9\d99f6e4a8edc2b395bd1e1d43fbcd641e1fa81f5
+U
+%src/main/java/dto/OrderDetailDto.java,a\6\a6cd26c16df7a806921856285c150e241aa58567
+T
+$src/main/java/dto/tm/CustomerTm.java,2\a\2a0edce3160840b5e1dff3a221d2fba22c0b3f67
+P
+ src/main/java/dto/tm/ItemTm.java,9\b\9bcbd3a396619ca96463cd87f096ec09b0b2ae8f
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
