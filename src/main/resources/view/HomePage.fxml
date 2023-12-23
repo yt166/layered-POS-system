@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="HomePane" prefHeight="360.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageCOntroller">
+   <children>
+      <JFXButton fx:id="btnCustomer" layoutX="315.0" layoutY="100.0" onAction="#btnCustomerOnAction" style="-fx-background-color: #797E23;" text="Customer" />
+      <JFXButton fx:id="btnItem" layoutX="332.0" layoutY="47.0" onAction="#btnItemOnAction" style="-fx-background-color: #797E23;" text="Item" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="309.0" layoutY="157.0" onAction="#btnPlaceOrderOnAction" style="-fx-background-color: #797E23;" text="Place Order" />
+      <JFXButton fx:id="btnOrderDetails" layoutX="304.0" layoutY="209.0" onAction="#btnOrderDetailsOnAction" style="-fx-background-color: #797E23;" text="Order Details" />
+   </children>
+</AnchorPane>

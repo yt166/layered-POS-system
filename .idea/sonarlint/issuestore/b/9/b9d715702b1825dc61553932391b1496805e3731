@@ -1,0 +1,9 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8—‚ϊ«Ι1
+}
+java:S1104"[Make OrderDetailPane a static final constant or non-public and provide accessors if needed.(–Τ§ωÿÿÿÿ8°ψ«Ι1
+p
+java:S1104"SMake btnBack a static final constant or non-public and provide accessors if needed.(ÿςΨ8°ψ«Ι1
+{	java:S116"ZRename this field "OrderDetailPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Τ§ωÿÿÿÿ8°ψ«Ι1
+T
+java:S1172"2Remove this unused method parameter "actionEvent".(†ωΰύÿÿÿÿ8°ψ«Ι1
