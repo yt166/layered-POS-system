@@ -1,11 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="CustomerPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+<AnchorPane fx:id="CustomerPane" prefHeight="767.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
    <children>
-      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #A41717;" text="Back" textFill="WHITE" />
+      <ImageView fx:id="imgCustomer" fitHeight="370.0" fitWidth="396.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" layoutX="14.0" layoutY="6.0" onAction="#btnBackOnaction" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #A41717;" text="Back" textFill="WHITE" />
+      <Label layoutX="389.0" layoutY="24.0" prefHeight="47.0" prefWidth="523.0" style="-fx-background-color: #1E926D;" text="                    Customer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCusID" layoutX="400.0" layoutY="97.0" text="Customer ID :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCusName" layoutX="400.0" layoutY="138.0" text="Customer Name :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCusAddress" layoutX="401.0" layoutY="177.0" text="Customer Address :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCusSalary" layoutX="401.0" layoutY="219.0" text="Customer Salary :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenID" layoutX="595.0" layoutY="100.0" text="Label" />
+      <JFXTextField fx:id="txtName" layoutX="589.0" layoutY="136.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="589.0" layoutY="177.0" prefHeight="31.0" prefWidth="221.0" />
+      <JFXTextField fx:id="txtSalary" layoutX="589.0" layoutY="217.0" prefHeight="31.0" prefWidth="138.0" />
+      <JFXButton fx:id="btnSave" layoutX="784.0" layoutY="248.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #135849;" text="Save" textFill="WHITE" />
+      <Label layoutX="13.0" layoutY="293.0" prefHeight="27.0" prefWidth="163.0" text="Search Customer :-" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCustomerID" layoutX="176.0" layoutY="293.0" prefHeight="31.0" prefWidth="123.0" />
+      <Label layoutX="14.0" layoutY="344.0" text="Customer name :-" />
+      <Label layoutX="299.0" layoutY="344.0" text="Customer Address :-" />
+      <Label layoutX="639.0" layoutY="344.0" text="Customer Salary :-" />
+      <JFXTextField fx:id="txtUpdateName" layoutX="133.0" layoutY="339.0" prefHeight="31.0" prefWidth="138.0" />
+      <JFXTextField fx:id="btnUpdateSalry" layoutX="758.0" layoutY="339.0" prefHeight="31.0" prefWidth="135.0" />
+      <JFXTextField fx:id="txtUpdateAddress" layoutX="439.0" layoutY="339.0" prefHeight="31.0" prefWidth="198.0" />
+      <JFXButton fx:id="btnUpdate" layoutX="784.0" layoutY="391.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #085B49;" text="Update" textFill="WHITE" />
+      <JFXTreeTableView fx:id="tblCustomer" layoutX="27.0" layoutY="445.0" prefHeight="289.0" prefWidth="865.0">
+         <columns>
+            <TreeTableColumn fx:id="colID" prefWidth="138.0" text="Customer ID" />
+            <TreeTableColumn fx:id="colName" prefWidth="180.0" text="Customer Name" />
+            <TreeTableColumn fx:id="colAddress" prefWidth="370.0" text="Customer Address" />
+            <TreeTableColumn fx:id="colSalary" prefWidth="176.0" text="Customer Salary" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnDelete" layoutX="660.0" layoutY="391.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #043F33;" text="Delete" textFill="WHITE" />
    </children>
 </AnchorPane>

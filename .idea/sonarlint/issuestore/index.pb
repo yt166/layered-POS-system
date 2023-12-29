@@ -39,40 +39,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
-T
-$src/main/java/dao/CustomerModel.java,b\3\b3d325215329891c9b21933301a0b038167780cd
-P
- src/main/java/dao/ItemModel.java,d\3\d3805e3d01b6d8ede146197cf64a289ca92680c6
-Q
-!src/main/java/dao/OrderModel.java,e\2\e2ce5d2818971bc240803a313a2317441665a41b
-X
-(src/main/java/dao/OrderDetailsModel.java,0\a\0aca52cacce478545fd9c0f3e59f8d5d0e9b4da2
-]
--src/main/java/dao/impl/CustomerModelImpl.java,c\8\c815190ba00f3713ea5bbfbc553cec444c416330
-Y
-)src/main/java/dao/impl/ItemModelImpl.java,5\d\5d2f453820c0aa8f924f6ba94fab6c4119c44429
-Z
-*src/main/java/dao/impl/OrderModelImpl.java,0\c\0c8eedfdae15de27d4b70dff8e3660176ce738c4
-[
-+src/main/java/dao/OrderDetailModelImpl.java,f\1\f1c5b97e576465945673b4c6f1a171d464f4e5ff
-a
-1src/main/java/dao/impl/OrderDetailsModelImpl.java,e\1\e1b7f7ec70c92d80eca8d1d37e26ab9386b22df9
-R
-"src/main/java/dao/CustomerDao.java,4\d\4d73f8e21866a715c6674826f4163c18e5bd51c0
-N
-src/main/java/dao/ItemDao.java,5\d\5d20387a7f99a2b052dda5b7dcf20203d5deb7c8
-V
-&src/main/java/dao/OrderDetailsDao.java,2\2\224622ff108cf7c62f9727f5f0889e0b2966209f
-O
-src/main/java/dao/OrderDao.java,4\3\43a8d782126cba6ddce6fd3e5cdcc7c3f244b5e6
-[
-+src/main/java/dao/impl/CustomerDaoImpl.java,d\6\d6f354130eb7f54c914b500388874774302fc4cf
-W
-'src/main/java/dao/impl/ItemDaoImpl.java,2\4\244fdeca2026d3ae62587813abea76315e150922
-_
-/src/main/java/dao/impl/OrderDetailsDaoImpl.java,3\8\384d08a27101460a10d575ad8c65540938a4828a
-X
-(src/main/java/dao/impl/OrderDaoImpl.java,7\d\7d7a62a5392e9fb18ff7c34be27cb52c52b23b24
 N
 src/main/java/dao/CrudDao.java,7\8\78e787272942dea7f82a659182496bc242d14ac9
 Y
