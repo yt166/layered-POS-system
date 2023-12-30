@@ -59,7 +59,7 @@
       <Label layoutX="299.0" layoutY="344.0" text="Customer Address :-" />
       <Label layoutX="639.0" layoutY="344.0" text="Customer Salary :-" />
       <JFXTextField fx:id="txtUpdateName" layoutX="133.0" layoutY="339.0" prefHeight="31.0" prefWidth="138.0" />
-      <JFXTextField fx:id="btnUpdateSalry" layoutX="758.0" layoutY="339.0" prefHeight="31.0" prefWidth="135.0" />
+      <JFXTextField fx:id="txtUpdateSalary" layoutX="758.0" layoutY="339.0" prefHeight="31.0" prefWidth="135.0" />
       <JFXTextField fx:id="txtUpdateAddress" layoutX="439.0" layoutY="339.0" prefHeight="31.0" prefWidth="198.0" />
       <JFXButton fx:id="btnUpdate" layoutX="784.0" layoutY="391.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #085B49;" text="Update" textFill="WHITE" />
       <JFXTreeTableView fx:id="tblCustomer" layoutX="27.0" layoutY="445.0" prefHeight="289.0" prefWidth="865.0">

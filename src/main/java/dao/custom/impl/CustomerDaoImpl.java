@@ -2,7 +2,6 @@ package dao.custom.impl;
 
 import dao.custom.CustomerDao;
 import db.DBConnection;
-import dto.CustomerDto;
 import entity.Customer;
 
 import java.sql.PreparedStatement;
@@ -48,8 +47,9 @@ public class CustomerDaoImpl implements CustomerDao {
 
     }
 
+
     @Override
-    public List<Customer> getAll(Customer entity) throws SQLException, ClassNotFoundException {
+    public List<Customer> getAll() throws SQLException, ClassNotFoundException {
         List<Customer> list = new ArrayList<>() ;
         String sql = "SELECT * FROM customer";
         PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
@@ -65,8 +65,17 @@ public class CustomerDaoImpl implements CustomerDao {
         return list;
     }
 
-    @Override
-    public CustomerDto lastCustomer() throws SQLException, ClassNotFoundException {
+    public Customer lastCustomer() throws SQLException, ClassNotFoundException {
+        String sql ="SELECT * FROM customer ORDER BY id DESC LIMIT 1";
+        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
+        ResultSet set = preparedStatement.executeQuery();
+
+        if(set.next()){
+            return new Customer(set.getString(1),
+                    set.getString(2),
+                    set.getString(3),
+                    set.getDouble(4));
+        }
         return null;
     }
 }

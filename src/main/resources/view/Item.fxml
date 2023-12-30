@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="ItemPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.itemCotroller">
+<AnchorPane fx:id="ItemPane" prefHeight="747.0" prefWidth="853.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.itemCotroller">
    <children>
-      <JFXButton fx:id="btnBack" layoutX="14.0" layoutY="21.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #A41717#A41717;" text="Back" textFill="#fffefe" />
+      <ImageView fx:id="imgItem" fitHeight="329.0" fitWidth="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/images%20(1).jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="329.0" layoutY="25.0" prefHeight="47.0" prefWidth="622.0" style="-fx-background-color: #9B825D;" text="                           Items" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="101.0" text="Item Code :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenCode" layoutX="527.0" layoutY="103.0" text="Label" />
+      <Label layoutX="347.0" layoutY="140.0" text="Description :-">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="182.0" text="Unit Prize :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="229.0" text="Qty On Hand :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDescription" layoutX="478.0" layoutY="138.0" prefHeight="31.0" prefWidth="306.0" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="478.0" layoutY="180.0" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="478.0" layoutY="227.0" prefHeight="31.0" prefWidth="115.0" />
+      <JFXButton fx:id="btnAddItem" layoutX="769.0" layoutY="243.0" onAction="#btnAddItemOnAction" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #5B4A30;" text="Add New Item" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="355.0" text="Item Code :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCodes" layoutX="122.0" layoutY="350.0" prefHeight="31.0" prefWidth="152.0" />
+      <Label layoutX="14.0" layoutY="403.0" text="Description :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="503.0" text="Unit Prize :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="567.0" text="Qty On Hand :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUpdateDescription" layoutX="19.0" layoutY="436.0" prefHeight="31.0" prefWidth="266.0" />
+      <JFXTextField fx:id="txtUpdateUnitPrize" layoutX="119.0" layoutY="501.0" prefHeight="31.0" prefWidth="152.0" />
+      <JFXTextField fx:id="txtUpdateQty" layoutX="145.0" layoutY="565.0" prefHeight="31.0" prefWidth="101.0" />
+      <JFXTreeTableView fx:id="tblItem" layoutX="309.0" layoutY="337.0" prefHeight="394.0" prefWidth="629.0">
+         <columns>
+            <TreeTableColumn fx:id="colCode" prefWidth="98.0" text="Code" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="299.0" text="Description" />
+            <TreeTableColumn fx:id="colUnitPrize" prefWidth="116.0" text="Unit Prize" />
+            <TreeTableColumn fx:id="colQty" prefWidth="90.0" text="Qty" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnBack" layoutX="14.0" layoutY="25.0" onAction="#btnBackOnAction" text="Back" />
+      <JFXButton fx:id="btnUpdate" layoutX="185.0" layoutY="632.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #5B4A30;" text="Update" textFill="#fcf9f9" />
+      <JFXButton fx:id="btnDelete" layoutX="19.0" layoutY="632.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #5B4A30;" text="Delete" textFill="WHITE" />
    </children>
 </AnchorPane>

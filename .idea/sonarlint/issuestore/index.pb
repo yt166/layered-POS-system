@@ -65,3 +65,7 @@ W
 'src/main/java/bo/custom/CustomerBo.java,b\a\ba3778c7e27590033ee81d064dd4468aa33eda6b
 `
 0src/main/java/bo/custom/impl/CustomerBoImpl.java,1\a\1a654b3282b021ba122a376474fac2d6aba60198
+S
+#src/main/java/bo/custom/ItemBo.java,5\5\550c2e395f13d384aec20a9ebca0bc483a9313ae
+\
+,src/main/java/bo/custom/impl/ItemBoImpl.java,b\4\b462a7d52bfda8233a21218d58e9fececacef184
