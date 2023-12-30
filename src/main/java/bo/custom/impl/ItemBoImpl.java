@@ -17,7 +17,7 @@ public class ItemBoImpl implements ItemBo<ItemDto> {
 
     @Override
     public boolean addItem(ItemDto dto) throws SQLException, ClassNotFoundException {
-        return itemDao.addItem(new Item(
+        return itemDao.save(new Item(
                 dto.getCode(),
                 dto.getDescription(),
                 dto.getUnitPrize(),
@@ -27,7 +27,7 @@ public class ItemBoImpl implements ItemBo<ItemDto> {
 
     @Override
     public boolean updateItem(ItemDto dto) throws SQLException, ClassNotFoundException {
-        return itemDao.updateItem(new Item(
+        return itemDao.update(new Item(
                 dto.getCode(),
                 dto.getDescription(),
                 dto.getUnitPrize(),
@@ -42,17 +42,19 @@ public class ItemBoImpl implements ItemBo<ItemDto> {
 
     @Override
     public List<ItemDto> allItems() throws SQLException, ClassNotFoundException {
-       List<Item> entityList = itemDao.allItem();
+       List<Item> entityList = itemDao.getAll();
        List<ItemDto> dtoList = new ArrayList<>();
+        if(entityList!=null) {
+            System.out.println("blaa blaaa");
+            for (Item item : entityList) {
+                dtoList.add(new ItemDto(
+                        item.getCode(),
+                        item.getDescription(),
+                        item.getUnitPrize(),
+                        item.getQtyOnHand()
+                ));
 
-        for (Item item:entityList) {
-            dtoList.add(new ItemDto(
-                    item.getCode(),
-                    item.getDescription(),
-                    item.getUnitPrize(),
-                    item.getQtyOnHand()
-            ));
-
+            }
         }
        return dtoList;
     }

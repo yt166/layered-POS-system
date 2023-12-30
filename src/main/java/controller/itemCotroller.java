@@ -13,6 +13,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
@@ -124,11 +125,59 @@ public class itemCotroller {
     }
 
     public void btnAddItemOnAction(ActionEvent actionEvent) {
+        try {
+            boolean added = itemBo.addItem(new ItemDto(lblGenCode.getText(),txtDescription.getText(),Double.parseDouble(txtUnitPrice.getText()),Integer.parseInt(txtQtyOnHand.getText())));
+
+            if(added){
+                new Alert(Alert.AlertType.INFORMATION,"Customer Added Succesfully").show();
+            }else {
+                new Alert(Alert.AlertType.INFORMATION,"Not Added").show();
+                clearFields();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        loadItemTable();
+    }
+
+    private void clearFields() {
+        txtDescription.clear();
+        txtUnitPrice.clear();
+        txtQtyOnHand.clear();
+        txtUpdateDescription.clear();
+        txtUpdateQty.clear();
+        txtUpdateUnitPrize.clear();
     }
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
+        try {
+            boolean updated = itemBo.updateItem(new ItemDto(lblGenCode.getText(),txtUpdateDescription.getText(),Double.parseDouble(txtUpdateUnitPrize.getText()),Integer.parseInt(txtUpdateQty.getText())));
+
+            if(updated){
+                new Alert(Alert.AlertType.INFORMATION,"Customer Added Succesfully").show();
+            }else {
+                new Alert(Alert.AlertType.INFORMATION,"Not Added").show();
+                clearFields();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        loadItemTable();
     }
 
     public void btnDeleteOnAction(ActionEvent actionEvent) {
+            boolean deleted = itemBo.deleteItem(cmbItemCodes.getValue().toString());
+
+            if(deleted){
+                new Alert(Alert.AlertType.INFORMATION,"Customer Deleted Successfully").show();
+                loadItemTable();
+                clearFields();
+            }else{
+                new Alert(Alert.AlertType.INFORMATION,"Something Wents Wrong").show();
+            }
     }
 }
