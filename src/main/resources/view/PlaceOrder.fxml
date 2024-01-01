@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="PlaceOrderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderController">
+<AnchorPane fx:id="PlaceOrderPane" prefHeight="762.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderController">
    <children>
       <JFXButton fx:id="btnBack" layoutX="14.0" layoutY="14.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #A41717;" text="Back" textFill="WHITE" />
+      <Label layoutX="24.0" layoutY="69.0" text="Customer ID :-">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="348.0" layoutY="69.0" text="Customer Name :-">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCusID" layoutX="140.0" layoutY="67.0" prefHeight="31.0" prefWidth="161.0" />
+      <JFXTextField fx:id="txtName" layoutX="507.0" layoutY="69.0" prefHeight="31.0" prefWidth="210.0" />
+      <Label layoutX="24.0" layoutY="131.0" text="Item Code :-" />
+      <Label layoutX="221.0" layoutY="132.0" text="Description :-" />
+      <Label layoutX="507.0" layoutY="132.0" text="Unit Price :-" />
+      <Label layoutX="725.0" layoutY="132.0" text="Qty On Hand :-" />
+      <JFXTextField fx:id="txtDescription" layoutX="255.0" layoutY="153.0" prefHeight="31.0" prefWidth="245.0" />
+      <JFXTextField fx:id="txtUnitPrize" layoutX="552.0" layoutY="153.0" prefHeight="31.0" prefWidth="146.0" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="776.0" layoutY="153.0" prefHeight="31.0" prefWidth="132.0" />
+      <JFXComboBox fx:id="cmbItems" layoutX="55.0" layoutY="153.0" prefHeight="31.0" prefWidth="146.0" />
+      <JFXTreeTableView layoutX="38.0" layoutY="275.0" prefHeight="400.0" prefWidth="885.0">
+         <columns>
+            <TreeTableColumn fx:id="colCode" prefWidth="131.0" text="Item Code" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="366.0" text="Description" />
+            <TreeTableColumn fx:id="colUnitPrize" prefWidth="156.0" text="Unit Price" />
+            <TreeTableColumn fx:id="colQty" prefWidth="110.0" text="Qty" />
+            <TreeTableColumn fx:id="colOption" prefWidth="119.0" text="Option" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnAddToCart" layoutX="769.0" layoutY="210.0" onAction="#btnAddToCartOnAction" prefHeight="31.0" prefWidth="146.0" text="Add to Cart" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="799.0" layoutY="692.0" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="132.0" text="Place Order" />
+      <Label layoutX="41.0" layoutY="697.0" text="Total Amount :-" />
+      <Label fx:id="lblAmount" layoutX="157.0" layoutY="697.0" text="Label" />
    </children>
 </AnchorPane>

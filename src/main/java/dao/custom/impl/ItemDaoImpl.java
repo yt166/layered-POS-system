@@ -60,6 +60,6 @@ public class ItemDaoImpl implements ItemDao {
                     resultSet.getInt(4)
             ));
         }
-        return null;
+        return list;
     }
 }

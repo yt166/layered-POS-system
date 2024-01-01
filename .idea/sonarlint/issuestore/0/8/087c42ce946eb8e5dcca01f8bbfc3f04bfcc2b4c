@@ -1,11 +1,5 @@
 
 q
-java:S20957"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8·Ç–ùÊ1
+java:S20959"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8°ÂÂ®Ì1
 q
-java:S2095,"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8ËÕ­ùÊ1
-q
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8à¶”ùÊ1
-q
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8ÖÞ—ùÊ1
-q
-java:S2095F"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8úå¹ÝË1
+java:S2095*"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8°ÂÂ®Ì1

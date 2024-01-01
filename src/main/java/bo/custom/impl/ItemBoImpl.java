@@ -36,16 +36,17 @@ public class ItemBoImpl implements ItemBo<ItemDto> {
     }
 
     @Override
-    public boolean deleteItem(String code) {
-        return false;
+    public boolean deleteItem(String code) throws SQLException, ClassNotFoundException {
+
+        return itemDao.delete(code);
     }
 
     @Override
     public List<ItemDto> allItems() throws SQLException, ClassNotFoundException {
        List<Item> entityList = itemDao.getAll();
        List<ItemDto> dtoList = new ArrayList<>();
-        if(entityList!=null) {
-            System.out.println("blaa blaaa");
+
+
             for (Item item : entityList) {
                 dtoList.add(new ItemDto(
                         item.getCode(),
@@ -55,7 +56,7 @@ public class ItemBoImpl implements ItemBo<ItemDto> {
                 ));
 
             }
-        }
+
        return dtoList;
     }
 }

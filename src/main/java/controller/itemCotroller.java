@@ -45,7 +45,7 @@ public class itemCotroller {
     public TreeTableColumn colQty;
     public JFXButton btnUpdate;
     public JFXButton btnDelete;
-    public JFXTreeTableView <ItemTm>tblItem;
+    public JFXTreeTableView<ItemTm> tblItem;
     private List<ItemDto> items;
     ItemBo<ItemDto> itemBo = new ItemBoImpl();
 
@@ -61,9 +61,9 @@ public class itemCotroller {
         cmbItemCodes.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, code) ->{
             for (ItemDto itemDto:items) {
                 if(itemDto.getCode().equals(code)){
-                    txtUpdateDescription.setText(itemDto.getCode());
+                    txtUpdateDescription.setText(itemDto.getDescription());
                     txtUpdateUnitPrize.setText(String.format("%.2f",itemDto.getUnitPrize()));
-                    txtUpdateQty.setText(String.format("%.2f",itemDto.getQtyOnHand()));
+                    txtUpdateQty.setText(String.valueOf(itemDto.getQtyOnHand()));
                 }
             }
         } );
@@ -169,7 +169,7 @@ public class itemCotroller {
         loadItemTable();
     }
 
-    public void btnDeleteOnAction(ActionEvent actionEvent) {
+    public void btnDeleteOnAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
             boolean deleted = itemBo.deleteItem(cmbItemCodes.getValue().toString());
 
             if(deleted){

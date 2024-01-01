@@ -1,6 +1,5 @@
 
-G	java:S1060"+Replace this use of System.out by a logger.(İ¥ÅÕ8·È·áË1
 N
-java:S1128",Remove this unused import 'dto.CustomerDto'.(ÛàÀÖüÿÿÿÿ8Õ×±áË1
+java:S1128",Remove this unused import 'dto.CustomerDto'.(ÛàÀÖüÿÿÿÿ8ÃÒ¡Ì1
 I
-java:S1128",Remove this unused import 'entity.Customer'.(éş²¢8Õ×±áË1
+java:S1128",Remove this unused import 'entity.Customer'.(éş²¢8ÃÒ¡Ì1

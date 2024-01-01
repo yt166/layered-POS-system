@@ -52,4 +52,25 @@ public class CustomerBoImpl implements CustomerBo<CustomerDto> {
         }
         return dtoList;
     }
+
+    @Override
+    public String customerID() {
+        String id = "";
+        /*try {
+            Customerdto cdto = customerDao.lastCustomer();
+            if (cdto != null) {
+                String id = cdto.getCusID();
+                int num = Integer.parseInt(id.split("[C]")[1]);
+                num++;
+                lblSetId.setText(String.format("C%03d", num));
+            } else {
+                lblSetId.setText("C001");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }*/
+        return id;
+    }
 }

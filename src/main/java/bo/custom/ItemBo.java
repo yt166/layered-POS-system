@@ -9,7 +9,7 @@ import java.util.List;
 public interface ItemBo<T> extends SuperBo {
     boolean addItem(T dto) throws SQLException, ClassNotFoundException;
     boolean updateItem(T dto) throws SQLException, ClassNotFoundException;
-    boolean deleteItem(String code);
+    boolean deleteItem(String code) throws SQLException, ClassNotFoundException;
     List<ItemDto> allItems() throws SQLException, ClassNotFoundException;
 
 }

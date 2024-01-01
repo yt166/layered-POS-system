@@ -1,13 +1,11 @@
 
 q
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8¿—ÚàË1
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8·Ä„£Ì1
 l
-java:S20955"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ìû—8¿—ÚàË1
+java:S20955"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ìû—8¸Ä„£Ì1
 q
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8¿—ÚàË1
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8¸Ä„£Ì1
 q
-java:S2095+"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8¿—ÚàË1
-H
-java:S1168?"+Return an empty collection instead of null.(¥¹ï8ÂÜÚàË1
+java:S2095+"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8¸Ä„£Ì1
 J
-java:S1128"(Remove this unused import 'dto.ItemDto'.(‚Æ‘ıÿÿÿÿ8åóáË1
+java:S1128"(Remove this unused import 'dto.ItemDto'.(‚Æ‘ıÿÿÿÿ8ÉÄ„£Ì1
