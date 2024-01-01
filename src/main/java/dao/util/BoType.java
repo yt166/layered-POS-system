@@ -1,2 +1,6 @@
-package dao.util;public enum BoType {
+package dao.util;
+
+public enum BoType {
+
+    CUSTOMER,ITEM,ORDER,ORDER_DETAIL
 }

@@ -77,3 +77,15 @@ $src/main/java/bo/custom/OrderBo.java,f\4\f4324142a116e27db58e2a81f2d0e4b8da1ca
 -src/main/java/bo/custom/impl/OrderBoImpl.java,3\b\3b7ed7c5f9386b52fcbd273d709e57a03acfa6d2
 T
 $src/main/java/dao/util/CrudUtil.java,9\8\982fb6ab96207e3dd9fec0af0e29293d46b73821
+O
+src/main/java/bo/BoFactory.java,8\7\87f10d9337d52368b8fe3186fdb076fdfef9fdb2
+R
+"src/main/java/dao/util/BoType.java,c\c\cc2b82ac2f4a22f578bd5a192be9127352a2ebb1
+[
++src/main/java/bo/custom/OrderDetailsBo.java,4\9\497021ea6d5d163964988848408dc12beaed8aa0
+d
+4src/main/java/bo/custom/impl/OrderDetailsBoImpl.java,8\8\88a8de834924e254fc7a7c4120699646481b0cc3
+S
+#src/main/java/dao/util/DaoType.java,b\9\b94ab38eee50b0f4d4cee1485fbdb29d4f2f1fef
+Q
+!src/main/java/dao/DaoFactory.java,8\d\8d44b226482856d38ca27da71ce51785fc57a3e4

@@ -1,4 +1,9 @@
 package bo.custom;
 
-public interface OrderBo {
+import bo.SuperBo;
+import dto.OrderDto;
+
+public interface OrderBo extends SuperBo {
+    boolean saveOrder(OrderDto dto);
+    String generateId();
 }

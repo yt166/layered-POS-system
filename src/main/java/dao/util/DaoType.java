@@ -1,2 +1,5 @@
-package dao.util;public class DaoType {
+package dao.util;
+
+public enum DaoType {
+    CUSTOMER,ITEM,ORDER,ORDER_DETAIL;
 }

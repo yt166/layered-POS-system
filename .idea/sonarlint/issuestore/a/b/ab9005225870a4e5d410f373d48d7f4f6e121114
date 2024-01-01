@@ -1,86 +1,88 @@
 
-g	java:S112Q"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚ìÙİË1
-g	java:S112S"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
-g	java:S112l"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
-h	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
-h	java:S112‘"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
-h	java:S112£"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
-h	java:S112¥"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
-h	java:S112µ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ƒìÙİË1
+g	java:S112S"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‹Ö¾¯Ì1
+g	java:S112U"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‹Ö¾¯Ì1
+g	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‹Ö¾¯Ì1
+h	java:S112…"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‹Ö¾¯Ì1
+h	java:S112“"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‹Ö¾¯Ì1
+h	java:S112¥"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‹Ö¾¯Ì1
+h	java:S112§"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŒÖ¾¯Ì1
+h	java:S112·"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŒÖ¾¯Ì1
 L
-java:S3740%"/Provide the parametrized type for this generic.(ÀÙãÑ8ƒìÙİË1
+java:S3740'"/Provide the parametrized type for this generic.(ÀÙãÑ8ŒÖ¾¯Ì1
 L
-java:S3740+"/Provide the parametrized type for this generic.(ï‡€®8ƒìÙİË1
+java:S3740-"/Provide the parametrized type for this generic.(ï‡€®8ŒÖ¾¯Ì1
 Q
-java:S3740,"/Provide the parametrized type for this generic.(¸ç€˜ÿÿÿÿÿ8ƒìÙİË1
+java:S3740."/Provide the parametrized type for this generic.(¸ç€˜ÿÿÿÿÿ8ŒÖ¾¯Ì1
 Q
-java:S3740-"/Provide the parametrized type for this generic.(Û¼Ùôüÿÿÿÿ8ƒìÙİË1
+java:S3740/"/Provide the parametrized type for this generic.(Û¼Ùôüÿÿÿÿ8ŒÖ¾¯Ì1
 Q
-java:S3740."/Provide the parametrized type for this generic.(Š€Šùıÿÿÿÿ8ƒìÙİË1
+java:S37400"/Provide the parametrized type for this generic.(Š€Šùıÿÿÿÿ8ŒÖ¾¯Ì1
 L
-java:S3740K"/Provide the parametrized type for this generic.(Ÿœ•¨8ƒìÙİË1
+java:S37403"/Provide the parametrized type for this generic.(º˜¬Ó8ŒÖ¾¯Ì1
+L
+java:S3740M"/Provide the parametrized type for this generic.(Ÿœ•¨8ŒÖ¾¯Ì1
 z
-java:S1104"XMake CustomerPane a static final constant or non-public and provide accessors if needed.(ŞÈöıÿÿÿÿ8†ìÙİË1
+java:S1104"XMake CustomerPane a static final constant or non-public and provide accessors if needed.(ŞÈöıÿÿÿÿ8Ö¾¯Ì1
 p
-java:S1104"SMake btnBack a static final constant or non-public and provide accessors if needed.(ºÀ°”8†ìÙİË1
+java:S1104"SMake btnBack a static final constant or non-public and provide accessors if needed.(ºÀ°”8Ö¾¯Ì1
 t
-java:S1104"WMake imgCustomer a static final constant or non-public and provide accessors if needed.(¿²ù´8†ìÙİË1
+java:S1104"WMake imgCustomer a static final constant or non-public and provide accessors if needed.(¿²ù´8Ö¾¯Ì1
 v
-java:S1104"TMake lblCusID a static final constant or non-public and provide accessors if needed.(áÚç…ÿÿÿÿÿ8†ìÙİË1
+java:S1104"TMake lblCusID a static final constant or non-public and provide accessors if needed.(áÚç…ÿÿÿÿÿ8Ö¾¯Ì1
 s
-java:S1104"VMake lblCusName a static final constant or non-public and provide accessors if needed.(­Ìºé8†ìÙİË1
+java:S1104"VMake lblCusName a static final constant or non-public and provide accessors if needed.(­Ìºé8Ö¾¯Ì1
 {
-java:S1104"YMake lblCusAddress a static final constant or non-public and provide accessors if needed.(Ÿ—’äşÿÿÿÿ8†ìÙİË1
+java:S1104 "YMake lblCusAddress a static final constant or non-public and provide accessors if needed.(Ÿ—’äşÿÿÿÿ8Ö¾¯Ì1
 u
-java:S1104"XMake lblCusSalary a static final constant or non-public and provide accessors if needed.(¬òÆô8†ìÙİË1
+java:S1104!"XMake lblCusSalary a static final constant or non-public and provide accessors if needed.(¬òÆô8Ö¾¯Ì1
 q
-java:S1104 "TMake lblGenID a static final constant or non-public and provide accessors if needed.(¹½­”8†ìÙİË1
+java:S1104""TMake lblGenID a static final constant or non-public and provide accessors if needed.(¹½­”8Ö¾¯Ì1
 u
-java:S1104!"SMake txtName a static final constant or non-public and provide accessors if needed.(¨äİìÿÿÿÿÿ8†ìÙİË1
+java:S1104#"SMake txtName a static final constant or non-public and provide accessors if needed.(¨äİìÿÿÿÿÿ8Ö¾¯Ì1
 x
-java:S1104""VMake txtAddress a static final constant or non-public and provide accessors if needed.(©ûîùıÿÿÿÿ8†ìÙİË1
+java:S1104$"VMake txtAddress a static final constant or non-public and provide accessors if needed.(©ûîùıÿÿÿÿ8Ö¾¯Ì1
 q
-java:S1104#"UMake txtSalary a static final constant or non-public and provide accessors if needed.(‹À8†ìÙİË1
+java:S1104%"UMake txtSalary a static final constant or non-public and provide accessors if needed.(‹À8Ö¾¯Ì1
 p
-java:S1104$"SMake btnSave a static final constant or non-public and provide accessors if needed.(çˆ©Õ8†ìÙİË1
+java:S1104&"SMake btnSave a static final constant or non-public and provide accessors if needed.(çˆ©Õ8Ö¾¯Ì1
 v
-java:S1104%"YMake cmbCustomerID a static final constant or non-public and provide accessors if needed.(ÀÙãÑ8†ìÙİË1
+java:S1104'"YMake cmbCustomerID a static final constant or non-public and provide accessors if needed.(ÀÙãÑ8Ö¾¯Ì1
 v
-java:S1104&"YMake txtUpdateName a static final constant or non-public and provide accessors if needed.(ÛÑ½Ï8†ìÙİË1
+java:S1104("YMake txtUpdateName a static final constant or non-public and provide accessors if needed.(ÛÑ½Ï8Ö¾¯Ì1
 w
-java:S1104'"ZMake btnUpdateSalry a static final constant or non-public and provide accessors if needed.(Ï©î8†ìÙİË1
+java:S1104)"ZMake btnUpdateSalry a static final constant or non-public and provide accessors if needed.(Ï©î8Ö¾¯Ì1
 ~
-java:S1104("\Make txtUpdateAddress a static final constant or non-public and provide accessors if needed.(õôü’úÿÿÿÿ8†ìÙİË1
+java:S1104*"\Make txtUpdateAddress a static final constant or non-public and provide accessors if needed.(õôü’úÿÿÿÿ8Ö¾¯Ì1
 r
-java:S1104)"UMake btnUpdate a static final constant or non-public and provide accessors if needed.(§Å‰÷8†ìÙİË1
+java:S1104+"UMake btnUpdate a static final constant or non-public and provide accessors if needed.(§Å‰÷8Ö¾¯Ì1
 t
-java:S1104*"WMake tblCustomer a static final constant or non-public and provide accessors if needed.(¹§Éî8†ìÙİË1
+java:S1104,"WMake tblCustomer a static final constant or non-public and provide accessors if needed.(¹§Éî8Ö¾¯Ì1
 n
-java:S1104+"QMake colID a static final constant or non-public and provide accessors if needed.(ï‡€®8†ìÙİË1
+java:S1104-"QMake colID a static final constant or non-public and provide accessors if needed.(ï‡€®8Ö¾¯Ì1
 u
-java:S1104,"SMake colName a static final constant or non-public and provide accessors if needed.(¸ç€˜ÿÿÿÿÿ8†ìÙİË1
+java:S1104."SMake colName a static final constant or non-public and provide accessors if needed.(¸ç€˜ÿÿÿÿÿ8Ö¾¯Ì1
 x
-java:S1104-"VMake colAddress a static final constant or non-public and provide accessors if needed.(Û¼Ùôüÿÿÿÿ8†ìÙİË1
+java:S1104/"VMake colAddress a static final constant or non-public and provide accessors if needed.(Û¼Ùôüÿÿÿÿ8Ö¾¯Ì1
 w
-java:S1104."UMake colSalary a static final constant or non-public and provide accessors if needed.(Š€Šùıÿÿÿÿ8†ìÙİË1
+java:S11040"UMake colSalary a static final constant or non-public and provide accessors if needed.(Š€Šùıÿÿÿÿ8Ö¾¯Ì1
 w
-java:S1104/"UMake btnDelete a static final constant or non-public and provide accessors if needed.(¤ÍËüıÿÿÿÿ8†ìÙİË1
+java:S11041"UMake btnDelete a static final constant or non-public and provide accessors if needed.(¤ÍËüıÿÿÿÿ8Ö¾¯Ì1
 }
-java:S11040"[Make txtUpdateSalary a static final constant or non-public and provide accessors if needed.(©æçÏûÿÿÿÿ8†ìÙİË1
-x	java:S116"WRename this field "CustomerPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÈöıÿÿÿÿ8¦ìÙİË1
+java:S11042"[Make txtUpdateSalary a static final constant or non-public and provide accessors if needed.(©æçÏûÿÿÿÿ8Ö¾¯Ì1
+x	java:S116"WRename this field "CustomerPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÈöıÿÿÿÿ8»Ö¾¯Ì1
 £
-java:S1186y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ë¼ëßşÿÿÿÿ8§ìÙİË1
+java:S1186{"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ë¼ëßşÿÿÿÿ8¼Ö¾¯Ì1
 a
-java:S2147R"DCombine this catch with the one at line 80, which has the same body.(ıàÑÎ8®ìÙİË1
+java:S2147T"DCombine this catch with the one at line 82, which has the same body.(ıàÑÎ8ÄÖ¾¯Ì1
 O
-java:S1172}"2Remove this unused method parameter "actionEvent".(Şå—é8µìÙİË1
+java:S1172"2Remove this unused method parameter "actionEvent".(Şå—é8ÌÖ¾¯Ì1
 O
-java:S1172‡"2Remove this unused method parameter "actionEvent".(õİŞ78»ìÙİË1
+java:S1172‰"2Remove this unused method parameter "actionEvent".(õİŞ78ÔÖ¾¯Ì1
 U
-java:S1172•"2Remove this unused method parameter "actionEvent".(¿˜å•øÿÿÿÿ8½ìÙİË1
+java:S1172—"2Remove this unused method parameter "actionEvent".(¿˜å•øÿÿÿÿ8ÖÖ¾¯Ì1
 c
-java:S2147¤"ECombine this catch with the one at line 162, which has the same body.(ıàÑÎ8½ìÙİË1
+java:S2147¦"ECombine this catch with the one at line 164, which has the same body.(ıàÑÎ8×Ö¾¯Ì1
 P
-java:S1172©"2Remove this unused method parameter "actionEvent".(Œ“‘8¾ìÙİË1
+java:S1172«"2Remove this unused method parameter "actionEvent".(Œ“‘8ÚÖ¾¯Ì1
 N
-java:S1144p",Remove this unused private "setData" method.(Úúõÿÿÿÿÿÿ8ÀìÙİË1
+java:S1144r",Remove this unused private "setData" method.(Úúõÿÿÿÿÿÿ8ßÖ¾¯Ì1

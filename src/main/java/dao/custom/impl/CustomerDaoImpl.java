@@ -39,8 +39,7 @@ public class CustomerDaoImpl implements CustomerDao {
     public List<Customer> getAll() throws SQLException, ClassNotFoundException {
         List<Customer> list = new ArrayList<>() ;
         String sql = "SELECT * FROM customer";
-        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
-        ResultSet set = preparedStatement.executeQuery();
+        ResultSet set = CrudUtil.execute(sql);
         while (set.next()){
             list.add(new Customer(
                     set.getString(1),
@@ -54,8 +53,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
     public Customer lastCustomer() throws SQLException, ClassNotFoundException {
         String sql ="SELECT * FROM customer ORDER BY id DESC LIMIT 1";
-        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
-        ResultSet set = preparedStatement.executeQuery();
+        ResultSet set = CrudUtil.execute(sql);
 
         if(set.next()){
             return new Customer(set.getString(1),

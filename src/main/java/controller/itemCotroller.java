@@ -1,9 +1,11 @@
 package controller;
 
+import bo.BoFactory;
 import bo.custom.ItemBo;
 import bo.custom.impl.ItemBoImpl;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import dao.util.BoType;
 import dto.CustomerDto;
 import dto.ItemDto;
 import dto.tm.CustomerTm;
@@ -47,7 +49,7 @@ public class itemCotroller {
     public JFXButton btnDelete;
     public JFXTreeTableView<ItemTm> tblItem;
     private List<ItemDto> items;
-    ItemBo<ItemDto> itemBo = new ItemBoImpl();
+    ItemBo itemBo = BoFactory.getInstance().getBo(BoType.ITEM);
 
     public void initialize(){
         generateID();

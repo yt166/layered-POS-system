@@ -36,8 +36,8 @@
          <columns>
             <TreeTableColumn fx:id="colCode" prefWidth="131.0" text="Item Code" />
             <TreeTableColumn fx:id="colDescription" prefWidth="366.0" text="Description" />
-            <TreeTableColumn fx:id="colUnitPrize" prefWidth="156.0" text="Unit Price" />
-            <TreeTableColumn fx:id="colQty" prefWidth="110.0" text="Qty" />
+            <TreeTableColumn fx:id="colQty" prefWidth="108.0" text="Qty" />
+            <TreeTableColumn fx:id="colAmount" prefWidth="158.0" text="Amount" />
             <TreeTableColumn fx:id="colOption" prefWidth="119.0" text="Option" />
          </columns>
       </JFXTreeTableView>

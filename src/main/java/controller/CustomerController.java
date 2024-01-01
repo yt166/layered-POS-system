@@ -1,9 +1,11 @@
 package controller;
 
+import bo.BoFactory;
 import bo.custom.CustomerBo;
 import bo.custom.impl.CustomerBoImpl;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import dao.util.BoType;
 import dto.CustomerDto;
 import dto.tm.CustomerTm;
 import javafx.collections.FXCollections;
@@ -46,7 +48,7 @@ public class CustomerController {
     public TreeTableColumn colSalary;
     public JFXButton btnDelete;
     public JFXTextField txtUpdateSalary;
-    CustomerBo<CustomerDto> customerBo = new CustomerBoImpl();
+    CustomerBo customerBo = BoFactory.getInstance().getBo(BoType.CUSTOMER);
     private List<CustomerDto> customers;
 
     public void initialize(){

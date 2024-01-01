@@ -1,2 +1,4 @@
-package bo.custom.impl;public class OrderDetailsBoImpl {
+package bo.custom.impl;
+
+public class OrderDetailsBoImpl {
 }

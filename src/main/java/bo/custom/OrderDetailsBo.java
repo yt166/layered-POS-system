@@ -1,2 +1,4 @@
-package bo.custom;public interface OrderDetailsBo {
+package bo.custom;
+
+public interface OrderDetailsBo {
 }
