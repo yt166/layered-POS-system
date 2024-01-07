@@ -5,6 +5,7 @@ import dao.util.CrudUtil;
 import db.DBConnection;
 import entity.Customer;
 
+import javax.security.auth.login.Configuration;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,6 +16,8 @@ public class CustomerDaoImpl implements CustomerDao {
     @Override
     public boolean save(Customer entity) throws SQLException, ClassNotFoundException {
         String sql="INSERT INTO Customer VALUES(?,?,?,?)";
+
+        Configuration configuration = new Configuration().configure("");
 
         return CrudUtil.execute(sql,entity.getId(),entity.getName(),entity.getAddress(),entity.getSalary());
     }

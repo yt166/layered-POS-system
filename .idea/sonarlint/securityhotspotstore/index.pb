@@ -89,3 +89,5 @@ S
 #src/main/java/dao/util/DaoType.java,b\9\b94ab38eee50b0f4d4cee1485fbdb29d4f2f1fef
 Q
 !src/main/java/dao/DaoFactory.java,8\d\8d44b226482856d38ca27da71ce51785fc57a3e4
+Y
+)src/main/java/dao/util/HibernateUtil.java,e\a\eaca33c06fde41d95c0977c988aecc4139aa0a69
