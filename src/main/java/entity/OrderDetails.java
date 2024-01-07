@@ -2,8 +2,7 @@ package entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -12,9 +11,19 @@ import javax.persistence.Id;
 @ToString
 @Entity
 public class OrderDetails {
-    @Id
-    private String orderID;
-    private String itemCode;
+    @EmbeddedId
+    private OrderDetailsKey orderDetailsKey;
+
+    @ManyToOne
+    @MapsId("itemCode")
+    @JoinColumn(name = "item_code")
+    Item item;
+
+    @ManyToOne
+    @MapsId("orderId")
+    @JoinColumn(name = "order_id")
+    Orders orders;
+
     private int qty;
-    private double unitPrize;
+    private double unitPrice;
 }

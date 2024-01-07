@@ -6,6 +6,6 @@ import entity.Orders;
 import java.sql.SQLException;
 
 public interface OrderDao {
-    boolean saveOrder(Orders orders) throws SQLException, ClassNotFoundException;
+    boolean saveOrder(OrderDto orderDto) throws SQLException, ClassNotFoundException;
     Orders lastOrder() throws SQLException, ClassNotFoundException;
 }

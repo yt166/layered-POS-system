@@ -1,16 +1,5 @@
 
 Y
-java:S1854"7Remove this useless assignment to local variable "sql".(£€—øÿÿÿÿ8á¾”¤Î1
+java:S18545"7Remove this useless assignment to local variable "sql".(£€—øÿÿÿÿ8¾Ö¡«Î1
 J
-java:S1481"(Remove this unused "sql" local variable.(£€—øÿÿÿÿ8â¾”¤Î1
-I
-java:S1128",Remove this unused import 'db.DBConnection'.(Šùà†8¿Ù¥Î1
-K
-java:S1128")Remove this unused import 'dto.OrderDto'.(æÑµÈùÿÿÿÿ8¿Ù¥Î1
-M
-java:S1128	"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8¿Ù¥Î1
-Y
-java:S1128
-"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ8¿Ù¥Î1
-K
-java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8¿Ù¥Î1
+java:S14815"(Remove this unused "sql" local variable.(£€—øÿÿÿÿ8¿Ö¡«Î1
