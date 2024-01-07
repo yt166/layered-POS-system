@@ -1,5 +1,8 @@
 
 P
 java:S1121".Extract the assignment out of this expression.(‰À°Ûþÿÿÿÿ8ðÐ´°Ì1
+X	java:S125"<This block of commented-out lines of code should be removed.(ËÈÖ²8ë ¥ÄÌ1
 ¶
 java:S6548	"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ÄßÜê8ôÐ´°Ì1
+t	java:S131"YComplete cases by adding the missing enum constants or add a default case to this switch.(“²Æ%8Ç‹ËôÍ1
+X	java:S125"<This block of commented-out lines of code should be removed.(‚ÚÙ™8È‹ËôÍ1

@@ -155,7 +155,10 @@ public class itemCotroller {
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
         try {
-            boolean updated = itemBo.updateItem(new ItemDto(lblGenCode.getText(),txtUpdateDescription.getText(),Double.parseDouble(txtUpdateUnitPrize.getText()),Integer.parseInt(txtUpdateQty.getText())));
+
+            boolean updated = itemBo.updateItem(new ItemDto(cmbItemCodes.getValue().toString(),txtUpdateDescription.getText(),Double.parseDouble(txtUpdateUnitPrize.getText()),Integer.parseInt(txtUpdateQty.getText())));
+            System.out.println(updated);
+
 
             if(updated){
                 new Alert(Alert.AlertType.INFORMATION,"Customer Added Succesfully").show();

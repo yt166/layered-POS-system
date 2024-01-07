@@ -15,14 +15,14 @@ import java.util.List;
 public class ItemDaoImpl implements ItemDao {
     @Override
     public boolean save(Item entity) throws SQLException, ClassNotFoundException {
-        String sql ="INSERT INTO Customer VALUE (?,?,?,?)";
+        String sql ="INSERT INTO item VALUE (?,?,?,?)";
 
         return CrudUtil.execute(sql,entity.getCode(),entity.getDescription(),entity.getUnitPrize(),entity.getQtyOnHand());
     }
 
     @Override
     public boolean update(Item entity) throws SQLException, ClassNotFoundException {
-        String sql ="UPDATE Customer SET description=?, unitPrice =?, qtyOnHand =?  WHERE id=?  ";
+        String sql ="UPDATE item SET description=?, unitPrice =?, qtyOnHand =?  WHERE code=?  ";
 
         return CrudUtil.execute(sql,entity.getDescription(),entity.getUnitPrize(),entity.getQtyOnHand(),entity.getCode());
     }
