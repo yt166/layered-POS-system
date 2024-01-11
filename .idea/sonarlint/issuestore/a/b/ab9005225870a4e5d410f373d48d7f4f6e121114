@@ -82,5 +82,7 @@ c
 java:S2147¦"ECombine this catch with the one at line 164, which has the same body.(ıàÑÎ8ÛŸ¶ôÍ1
 P
 java:S1172«"2Remove this unused method parameter "actionEvent".(Œ“‘8ŞŸ¶ôÍ1
+\
+java:S1128":Remove this unused import 'bo.custom.impl.CustomerBoImpl'.(–×³€ÿÿÿÿÿ8‚‚åºÎ1
 N
 java:S1144r",Remove this unused private "setData" method.(Úúõÿÿÿÿÿÿ8áŸ¶ôÍ1

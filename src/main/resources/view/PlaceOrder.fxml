@@ -32,7 +32,7 @@
       <JFXTextField fx:id="txtUnitPrize" layoutX="552.0" layoutY="153.0" prefHeight="31.0" prefWidth="146.0" />
       <JFXTextField fx:id="txtQtyOnHand" layoutX="776.0" layoutY="153.0" prefHeight="31.0" prefWidth="132.0" />
       <JFXComboBox fx:id="cmbItems" layoutX="55.0" layoutY="153.0" prefHeight="31.0" prefWidth="146.0" />
-      <JFXTreeTableView layoutX="38.0" layoutY="275.0" prefHeight="400.0" prefWidth="885.0">
+      <JFXTreeTableView fx:id="tblOrders" layoutX="38.0" layoutY="275.0" prefHeight="400.0" prefWidth="885.0">
          <columns>
             <TreeTableColumn fx:id="colCode" prefWidth="131.0" text="Item Code" />
             <TreeTableColumn fx:id="colDescription" prefWidth="366.0" text="Description" />

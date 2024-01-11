@@ -91,7 +91,5 @@ Q
 !src/main/java/dao/DaoFactory.java,8\d\8d44b226482856d38ca27da71ce51785fc57a3e4
 Y
 )src/main/java/dao/util/HibernateUtil.java,e\a\eaca33c06fde41d95c0977c988aecc4139aa0a69
-U
-%src/main/java/entity/OrderDetail.java,9\5\95539df9e9e1bc7fb0d7822ae09bdd972b17ec90
 Y
 )src/main/java/entity/OrderDetailsKey.java,d\8\d8bf35ddbede29bf962753bff8b727d827e0db2f

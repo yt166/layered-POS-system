@@ -4,18 +4,22 @@ import bo.BoFactory;
 import bo.custom.CustomerBo;
 import bo.custom.ItemBo;
 import bo.custom.OrderBo;
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXComboBox;
-import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.controls.*;
+import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dao.util.BoType;
 import dto.CustomerDto;
 import dto.ItemDto;
+import dto.OrderDto;
+import dto.tm.OrderTm;
+import entity.OrderDetails;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.cell.TreeItemPropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
@@ -23,6 +27,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PlaceOrderController {
@@ -43,11 +50,14 @@ public class PlaceOrderController {
     public JFXButton btnPlaceOrder;
     public Label lblAmount;
     public TreeTableColumn colAmount;
+    public JFXTreeTableView <OrderTm>tblOrders;
     private List<CustomerDto> customers;
     private List<ItemDto> items;
     private ItemBo itemBo = BoFactory.getInstance().getBo(BoType.ITEM);
     private CustomerBo customerBo = BoFactory.getInstance().getBo(BoType.CUSTOMER);
     private OrderBo orderBo = BoFactory.getInstance().getBo(BoType.ORDER);
+    private  ObservableList<OrderTm> tmlist = FXCollections.observableArrayList();
+    private double amount = 0.0;
 
     public void initialize(){
         colCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
@@ -122,8 +132,70 @@ public class PlaceOrderController {
     }
 
     public void btnAddToCartOnAction(ActionEvent actionEvent) {
+       /* try {
+            double prize = itemBo.allItems(cmbItems.getValue().toString()).getUnitPrize()*Integer.parseInt(txtQtyOnHand.getText());
+            JFXButton btn = new JFXButton("Delete");
+
+            OrderTm orderTm = new OrderTm(
+                    cmbItems.getValue().toString(),
+                    txtDescription.getText(),
+                    Integer.parseInt(txtQtyOnHand.getText()),
+                    prize,
+                    btn
+            );
+
+            btn.setOnAction(actionEvent1 -> {
+                tmlist.remove(orderTm);
+                amount -= orderTm.getUnitPrice();
+                tblOrders.refresh();
+                lblSetAmount.setText(String.format("%.2f",amount));
+            });
+
+            boolean isExist = false;
+            for(OrderTm order: tmlist){
+                if(order.getCode().equals(orderTm.getCode())){
+                    order.setQty(order.getQty()+orderTm.getQty());
+                    order.setPrize(order.getPrize()+orderTm.getPrize());
+                    isExist = true;
+                    amount+=orderTm.getPrize();
+                }
+            }
+
+            if(!isExist){
+                tmlist.add(orderTm);
+                amount+=orderTm.getUnitPrice();
+            }
+
+            TreeItem<OrderTm> treeItem = new RecursiveTreeItem<>(tmlist, RecursiveTreeObject::getChildren);
+            tblOrders.setRoot(treeItem);
+            tblOrders.setShowRoot(false);
+
+            txtQtyOnHand.clear();
+            lblAmount.setText(String.format("%.2f",amount));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }*/
     }
 
     public void btnPlaceOrderOnAction(ActionEvent actionEvent) {
+        /*List<OrderDetails> list = new ArrayList<>();
+        for (OrderTm orderTm:tmlist) {
+            list.add(new OrderDetails(
+                    lblGenID.getText(),
+                    orderTm.getCode(),
+                    orderTm.getQty(),
+                    orderTm.getPrize()/orderTm.getQty()
+            ));
+        }
+        boolean isSaved = false;
+        isSaved = orderBo.saveOrder(new OrderDto(
+                lblAmount.getText(),
+                LocalDateTime.now().format(DateTimeFormatter.ofPattern("YYYY-MM-dd")),
+                cmbCusID.getValue().toString(),
+                list
+           }
+    }*/
     }
 }
